@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@400;700&display=swap");
+
+/* Sets of Tailwind CSS classes */
+.section-regular {
+  @apply w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12;
+}
+.menu-item {
+  @apply flex transition-all hover:border-r-2 hover:pr-2 hover:text-sky-50;
+}
+.burger-menu-line {
+  @apply w-5 border-2 border-black rounded-sm;
+}
+.h2-regular {
+  @apply uppercase text-xl tracking-wider font-bold mb-10;
+}
+.vertical-line {
+  @apply border-l-2 pt-4 pl-5 ml-5;
+}
+.ul-tags {
+  @apply flex flex-wrap pb-11;
+}
+.li-tag {
+  @apply mt-2 mr-2;
+}
+.tag {
+  @apply flex border rounded-xl w-max px-5 py-1.5 text-sm;
+}
+.ul-details {
+  @apply text-lg space-y-5 pb-11;
+}

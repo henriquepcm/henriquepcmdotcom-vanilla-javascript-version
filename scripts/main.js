@@ -6,20 +6,17 @@ const menuBackground = document.getElementById("menu-background");
 const close = document.getElementById("close");
 const body = document.body;
 const logo = document.getElementById("logo");
-const container = document.getElementById("container");
 
 // Opens the Menu
 function openMenu() {
   menuBackground.classList.remove("hidden");
   body.classList.add("overflow-hidden");
-  container.classList.add("blur-sm");
 }
 
 // Closes the Menu
 function closeMenu() {
   menuBackground.classList.add("hidden");
   body.classList.remove("overflow-hidden");
-  container.classList.remove("blur-sm");
 }
 
 //Add event listener to the burger menu and menu's background

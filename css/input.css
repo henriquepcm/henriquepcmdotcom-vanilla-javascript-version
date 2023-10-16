@@ -10,7 +10,7 @@
   @apply w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12;
 }
 .menu-item {
-  @apply flex transition-all hover:border-r-2 hover:pr-2 hover:text-sky-50;
+  @apply flex transition-all hover:border-r-2 hover:pr-2 hover:text-slate-400;
 }
 .burger-menu-line {
   @apply w-5 border-2 border-black rounded-sm;

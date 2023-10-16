@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section[id^='section']"); // Select sections' IDs
   const menuItems = document.querySelectorAll("#menu a"); // Select Menu Items
   const logo = document.getElementById("logo"); // Select Logo
+  const main = document.querySelector("main"); // Select <main>
 
   //Function to hide all sections
   function hideSections() {
@@ -54,6 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = e.target.getAttribute("href").substring(1); // Get the target section and removes "#"
       hideSections(); // hide all sections
       document.getElementById(targetId).classList.remove("hidden"); // show the one that got clicked
+      console.log(targetId);
+
+      // Add or Remove classes to display content centralized (or not) on the screen
+      if (["section-home", "section-about"].includes(targetId)) {
+        main.classList.add("h-full");
+        main.classList.remove("mt-10");
+      } else {
+        {
+          main.classList.remove("h-full");
+          main.classList.add("mt-10");
+        }
+      }
     });
   });
 
@@ -62,5 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     hideSections(); // hide all sections
     sections[0].classList.remove("hidden"); // open the home section
+    main.classList.add("h-full");
+    main.classList.remove("mt-10");
   });
 });

@@ -79,9 +79,12 @@
           </div>
         </div>
       </header>
-      <main class="flex flex-grow p-5 mt-5 justify-center items-center h-full">
+      <main class="flex p-5 justify-center items-center h-full">
         <!-- Begins Home Section -->
-        <section id="section-home" class="flex flex-col w-12/12 justify-center">
+        <section
+          id="section-home"
+          class="flex flex-col h-full w-12/12 justify-center hidden"
+        >
           <h1 class="uppercase text-2xl tracking-wider font-bold">
             Henrique Pochmann
           </h1>
@@ -89,6 +92,7 @@
             Creative professional who writes, designs, and codes.
           </h2>
         </section>
+        <!-- Ends Home Section -->
         <!-- Begins About Section -->
         <section
           id="section-about"
@@ -108,6 +112,7 @@
             </p>
           </div>
         </section>
+        <!-- Ends Home Section -->
         <!-- Begins Professional Experiences Section -->
         <section id="section-experience" class="section-regular hidden">
           <h2 class="h2-regular">Professional Experiences</h2>
@@ -305,6 +310,7 @@
             </ul>
           </div>
         </section>
+        <!-- Ends Professional Experiences Section -->
         <!-- Begins Education Section -->
         <section id="section-education" class="section-regular hidden">
           <h2 class="h2-regular">Education</h2>
@@ -385,13 +391,17 @@
             </ul>
           </div>
         </section>
+        <!-- Ends Education Section -->
         <!-- Begins Skills Section -->
-        <section id="section-skills" class="hidden">
+        <section
+          id="section-skills"
+          class="flex flex-col grow justify-center items-start"
+        >
           <h2 class="h2-regular">
             Skills, Tools and Languages in Alphabetical Order
           </h2>
           <!-- Div that contains all skills columns-->
-          <div class="grid lg:grid-cols-5 h-auto">
+          <div class="grid lg:grid-cols-5">
             <!-- Hard Skills-->
             <div>
               <span class="mt-5 font-bold">Hard Skills</span>
@@ -521,6 +531,7 @@
           </div>
           <!-- Ends div with all skills columns -->
         </section>
+        <!-- Ends Skills Section -->
         <!-- Begins Projects Section -->
         <section
           id="section-projects"
@@ -681,6 +692,7 @@
             </a>
           </div>
         </section>
+        <!-- Ends Projects Section -->
       </main>
       <!-- Begins Footer -->
       <footer class="flex p-5">
@@ -752,6 +764,7 @@
           </p>
         </div>
       </footer>
+      <!-- Ends Footer -->
     </div>
     <!-- Ends Container-->
     <script src="../scripts/main.js"></script>

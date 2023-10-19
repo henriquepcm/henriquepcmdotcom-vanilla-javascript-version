@@ -12,8 +12,11 @@
 .menu-item {
   @apply flex transition-all hover:border-r-2 hover:pr-2 hover:text-slate-400;
 }
+.menu-item--selected {
+  @apply border-r-2 pr-2 text-slate-400;
+}
 .burger-menu-line {
-  @apply w-5 border-2 border-black rounded-sm;
+  @apply border-2 border-black rounded-sm;
 }
 .h2-regular {
   @apply uppercase text-xl tracking-wider font-bold mb-10;

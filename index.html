@@ -8,6 +8,7 @@
     />
     <link href="dist/output.css" rel="stylesheet" />
     <link href="css/input.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="200x200" href="img/favicon.png" />
     <title>Henrique Pochmann - Frontend Developer</title>
   </head>
   <body class="h-full">
@@ -17,11 +18,15 @@
       class="flex grow inset-y-0 bg-black w-1/2 z-10 absolute hidden"
     >
       <!-- X button -->
-      <div id="close" class="ml-5 pt-5">
-        <hr
-          class="w-5 border-2 bg-white border-white rounded-sm rotate-45 translate-y-1"
-        />
-        <hr class="w-5 border-2 bg-white border-white rounded-sm -rotate-45" />
+      <div class="ml-5 pt-5">
+        <div id="close" class="hover:cursor-pointer">
+          <hr
+            class="w-5 border-2 bg-white border-white rounded-sm rotate-45 translate-y-1"
+          />
+          <hr
+            class="w-5 border-2 bg-white border-white rounded-sm -rotate-45"
+          />
+        </div>
       </div>
       <!-- Begins Itens Menu -->
       <nav
@@ -29,22 +34,30 @@
       >
         <ul id="menu" class="flex flex-col space-y-5 items-end w-32">
           <li>
-            <a href="#section-home" class="menu-item">Home</a>
+            <a href="#section-home" class="internal-link menu-item--selected"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#section-about" class="menu-item">About</a>
+            <a href="#section-about" class="internal-link menu-item">About</a>
           </li>
           <li>
-            <a href="#section-experience" class="menu-item">Experience</a>
+            <a href="#section-experience" class="internal-link menu-item"
+              >Experience</a
+            >
           </li>
           <li>
-            <a href="#section-projects" class="menu-item">Projects</a>
+            <a href="#section-projects" class="internal-link menu-item"
+              >Projects</a
+            >
           </li>
           <li>
-            <a href="#section-skills" class="menu-item">Skills</a>
+            <a href="#section-skills" class="internal-link menu-item">Skills</a>
           </li>
           <li>
-            <a href="#section-education" class="menu-item">Education</a>
+            <a href="#section-education" class="internal-link menu-item"
+              >Education</a
+            >
           </li>
         </ul>
       </nav>
@@ -56,14 +69,17 @@
         <div class="flex mx-auto ml-5 pt-5">
           <!-- Burger Menu -->
           <div class="w-1/2">
-            <div id="burger" class="space-y-0.5">
+            <div id="burger" class="w-5 space-y-0.5 hover:cursor-pointer">
               <div><hr class="burger-menu-line" /></div>
               <div><hr class="burger-menu-line" /></div>
               <div><hr class="burger-menu-line" /></div>
             </div>
           </div>
           <div id="logo" class="w-1/2 flex justify-end mr-5">
-            <a href="#section-home" class="transition hover:scale-110">
+            <a
+              href="#section-home"
+              class="internal-link transition hover:scale-110"
+            >
               <img
                 src="img/henriquepcm-logo-1x"
                 srcset="

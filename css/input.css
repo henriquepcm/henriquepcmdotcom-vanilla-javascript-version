@@ -7,7 +7,7 @@
 
 /* Sets of Tailwind CSS classes */
 .section-regular {
-  @apply w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12;
+  @apply w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 md:text-lg mb-24;
 }
 .menu-item {
   @apply flex transition-all hover:border-r-2 hover:pr-2 hover:text-slate-400;

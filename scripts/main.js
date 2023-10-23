@@ -80,16 +80,17 @@ document.addEventListener("DOMContentLoaded", function () {
         main.classList.remove("mt-10");
         container.classList.add("h-full");
 
-        // Add specific set of styles for the Skills and Education sections
+        /*         // Add specific set of styles for the Skills and Education sections
       } else if (["section-skills", "section-education"].includes(targetId)) {
         main.classList.remove("h-full");
-        container.classList.add("h-full");
+        container.classList.add("h-full"); */
 
         // Add specific set of styles for the other sections
       } else {
         main.classList.remove("h-full");
-        main.classList.add("mt-10");
+        main.classList.remove("mt-5");
         container.classList.remove("h-full");
+        main.classList.add("mt-10");
       }
     });
   });

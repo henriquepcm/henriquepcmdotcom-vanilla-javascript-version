@@ -10,14 +10,16 @@ const html = document.documentElement;
 
 // Opens the Menu
 function openMenu() {
-  menuBackground.classList.remove("hidden");
+  menuBackground.classList.remove("-translate-x-full");
+  menuBackground.classList.add("translate-x-1/4");
   body.classList.add("overflow-hidden");
   html.classList.add("overflow-hidden");
 }
 
 // Closes the Menu
 function closeMenu() {
-  menuBackground.classList.add("hidden");
+  menuBackground.classList.add("-translate-x-full");
+  menuBackground.classList.remove("translate-x-1/4");
   body.classList.remove("overflow-hidden");
   html.classList.remove("overflow-hidden");
 }
@@ -106,3 +108,11 @@ document.addEventListener("DOMContentLoaded", function () {
     container.classList.add("h-full");
   });
 });
+
+// Animations for Burger Menu, Logo, Footer and Tittle when the page loads
+const footer = document.querySelector("footer");
+const main = document.querySelector("main");
+burger.classList.remove("opacity-0", "-translate-y-full");
+logo.classList.remove("opacity-0", "-translate-y-5");
+footer.classList.remove("opacity-0", "translate-y-5");
+main.classList.remove("opacity-0");

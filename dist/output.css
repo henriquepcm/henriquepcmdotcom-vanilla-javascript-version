@@ -576,10 +576,6 @@ video {
   margin-bottom: 8rem;
 }
 
-.mb-96 {
-  margin-bottom: 24rem;
-}
-
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -797,10 +793,6 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pb-96 {
-  padding-bottom: 24rem;
 }
 
 .text-center {

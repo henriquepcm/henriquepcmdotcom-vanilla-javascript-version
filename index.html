@@ -20,11 +20,14 @@
           <!-- Begins Menu-->
           <div
                id="menu-background"
-               class="flex grow inset-y-0 bg-black w-1/2 z-10 absolute -translate-x-full duration-300"
+               class="flex grow inset-y-0 bg-black w-1/2 md:w-1/4 z-10 absolute -translate-x-full duration-300"
           >
                <!-- X button -->
                <div class="ml-5 pt-5">
-                    <div id="close" class="hover:cursor-pointer">
+                    <div
+                         id="close"
+                         class="hover:cursor-pointer active:translate-y-0.5"
+                    >
                          <hr
                               class="w-5 border-2 bg-white border-white rounded-sm rotate-45 translate-y-1"
                          />
@@ -37,49 +40,58 @@
                <nav
                     class="flex grow items-center justify-center text-slate-300 uppercase font-condensed tracking-widest"
                >
-                    <ul
-                         id="menu"
-                         class="flex flex-col space-y-5 items-end w-32"
-                    >
-                         <li>
+                    <ul id="menu" class="flex flex-col space-y-5 w-32">
+                         <li
+                              class="w-full progression-bar menu-item-active active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-home"
-                                   class="internal-link menu-item--selected"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >Home</a
                               >
                          </li>
-                         <li>
+                         <li
+                              class="w-full progression-bar active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-about"
-                                   class="internal-link menu-item"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >About</a
                               >
                          </li>
-                         <li>
+                         <li
+                              class="w-full progression-bar active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-experience"
-                                   class="internal-link menu-item"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >Experience</a
                               >
                          </li>
-                         <li>
+                         <li
+                              class="w-full progression-bar active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-projects"
-                                   class="internal-link menu-item"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >Projects</a
                               >
                          </li>
-                         <li>
+                         <li
+                              class="w-full progression-bar active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-skills"
-                                   class="internal-link menu-item"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >Skills</a
                               >
                          </li>
-                         <li>
+                         <li
+                              class="w-full progression-bar active:translate-y-0.5"
+                         >
                               <a
                                    href="#section-education"
-                                   class="internal-link menu-item"
+                                   class="inline-block transition-transform ease-in-out hover:translate-x-2"
                                    >Education</a
                               >
                          </li>
@@ -92,7 +104,7 @@
                <!-- Header-->
                <div class="flex mx-auto p-5">
                     <!-- Burger Menu -->
-                    <div class="w-1/2">
+                    <div class="w-1/2 active:translate-y-0.5">
                          <div
                               id="burger"
                               class="w-5 space-y-0.5 hover:cursor-pointer delay-100 duration-300 ease-in opacity-0 -translate-y-full"
@@ -108,7 +120,7 @@
                     >
                          <a
                               href="#section-home"
-                              class="internal-link transition ease-linear hover:scale-110"
+                              class="transition ease-linear hover:scale-110"
                          >
                               <img
                                    src="img/henriquepcm-logo-1x"
@@ -117,7 +129,7 @@
                                         img/henriquepcm-logo-2x.png 2x,
                                         img/henriquepcm-logo-3x.png 3x
                                    "
-                                   class="w-24 h-24"
+                                   class="w-24 h-24 active:translate-y-0.5"
                                    alt="logo henriquepcm.com frontend developer"
                                    decoding="async"
                               />
@@ -399,6 +411,22 @@
                               <li>
                                    Course:
                                    <strong
+                                        >Agile Fundamentals: Including Scrum &
+                                        Kanban</strong
+                                   >
+                                   on Udemy
+                              </li>
+                              <li>
+                                   Course:
+                                   <strong
+                                        >Advanced CSS and Sass: Flexbox, Grid,
+                                        Animations and More!</strong
+                                   >
+                                   on Udemy
+                              </li>
+                              <li>
+                                   Course:
+                                   <strong
                                         >Build Responsive Real-World Websites
                                         with HTML and CSS</strong
                                    >
@@ -654,7 +682,7 @@
           >
                <!-- Icons -->
                <ul id="footer-info" class="flex items-center space-x-2">
-                    <li>
+                    <li class="active:translate-y-0.5">
                          <a
                               href="https://www.linkedin.com/in/henriquepcm/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9GZ5%2FodxSjCi4Vt9Ayue9w%3D%3D"
                               target="_blank"
@@ -671,7 +699,7 @@
                               </svg>
                          </a>
                     </li>
-                    <li>
+                    <li class="active:translate-y-0.5">
                          <a
                               href="https://github.com/henriquepcm"
                               target="_blank"
@@ -694,31 +722,35 @@
                     <p class="tracking-wider">
                          Designed in
                          <a
-                              class="font-bold hover:text-blue-700"
+                              class="link-inline font-bold"
                               href="https://www.figma.com/"
                               target="_blank"
-                              >Figma</a
+                              data-replace="Figma"
+                              ><span>Figma</span></a
                          >. Coded in
                          <a
-                              class="font-bold hover:text-blue-700"
+                              class="link-inline font-bold"
                               href="https://code.visualstudio.com/"
                               target="_blank"
-                              >Visual Studio Code</a
+                              data-replace="Visual Studio Code"
+                              ><span>Visual Studio Code</span></a
                          >
                          with
                          <a
-                              class="font-bold hover:text-blue-700"
+                              class="link-inline font-bold"
                               href="https://tailwindcss.com/"
                               target="_blank"
-                              >Tailwind CSS</a
+                              data-replace="Tailwind CSS"
+                              ><span>Tailwind CSS</span></a
                          >
                          and
                          <a
-                              class="font-bold hover:text-blue-700"
+                              class="link-inline font-bold"
                               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                               target="_blank"
+                              data-replace="Vanilla JavaScript"
                          >
-                              Vanilla JavaScript</a
+                              <span>Vanilla JavaScript</span></a
                          >. Created from scratch by Henrique Pochmann.
                     </p>
                </div>

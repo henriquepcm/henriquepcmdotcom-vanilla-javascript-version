@@ -90,7 +90,3 @@
 .link-inline:hover span {
      transform: translate3d(-200%, 0, 0);
 }
-
-a:focus {
-     padding: 5px;
-}

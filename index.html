@@ -24,9 +24,10 @@
           >
                <!-- X button -->
                <div class="ml-5 pt-5">
-                    <div
+                    <button
                          id="close"
                          class="hover:cursor-pointer active:translate-y-0.5"
+                         aria-label="Closes main menu"
                     >
                          <hr
                               class="w-5 border-2 bg-white border-white rounded-sm rotate-45 translate-y-1"
@@ -34,7 +35,7 @@
                          <hr
                               class="w-5 border-2 bg-white border-white rounded-sm -rotate-45"
                          />
-                    </div>
+                    </button>
                </div>
                <!-- Begins Itens Menu -->
                <nav
@@ -104,23 +105,26 @@
                <!-- Header-->
                <div class="flex mx-auto p-5">
                     <!-- Burger Menu -->
-                    <div class="w-1/2 active:translate-y-0.5">
-                         <div
-                              id="burger"
-                              class="w-5 space-y-0.5 hover:cursor-pointer delay-100 duration-300 ease-in opacity-0 -translate-y-full"
-                         >
-                              <div><hr class="burger-menu-line" /></div>
-                              <div><hr class="burger-menu-line" /></div>
-                              <div><hr class="burger-menu-line" /></div>
+                    <div class="w-1/2">
+                         <div class="w-10 h-10 rounded-full">
+                              <button
+                                   id="burger"
+                                   class="w-5 mt-3 ml-2.5 space-y-0.5 delay-100 hover:cursor-pointer duration-300 ease-in opacity-0 -translate-y-full"
+                                   aria-label="Opens main menu"
+                              >
+                                   <div><hr class="burger-menu-line" /></div>
+                                   <div><hr class="burger-menu-line" /></div>
+                                   <div><hr class="burger-menu-line" /></div>
+                              </button>
                          </div>
                     </div>
                     <div
                          id="logo"
-                         class="w-1/2 flex justify-end delay-300 duration-300 ease-in opacity-0 -translate-y-5"
+                         class="w-1/2 flex justify-end delay-300 duration-300 ease-in opacity-0"
                     >
                          <a
                               href="#section-home"
-                              class="transition ease-linear hover:scale-110"
+                              class="transition ease-linear border-0 margin-0 p-0"
                               aria-label="Link to website's home page"
                          >
                               <img
@@ -130,7 +134,7 @@
                                         img/henriquepcm-logo-2x.png 2x,
                                         img/henriquepcm-logo-3x.png 3x
                                    "
-                                   class="w-24 h-24 active:translate-y-0.5"
+                                   class="w-24 h-24"
                                    alt="henriquepcm.com logo"
                                    decoding="async"
                               />

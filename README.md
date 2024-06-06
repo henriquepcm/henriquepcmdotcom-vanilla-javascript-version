@@ -36,7 +36,6 @@ A single-page, responsive, mobile-first professional website built with JavaScri
 -    **Interactive Footer Links**: Footer links with engaging hover-over animations for better user interaction.
 -    **Customizable**: Easy to customize and extend, allowing for personalized modifications and additions.
 -    **Cross-Browser Compatibility**: Compatible with all modern browsers, ensuring consistent behavior across platforms.
--    **Accessible**: Follows accessibility best practices to ensure a user-friendly experience for all users. Checked on [WAVE](https://wave.webaim.org/report#/https://henriquepcmvjs.netlify.app/).
 
 ## License
 
